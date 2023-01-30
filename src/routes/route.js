@@ -1,10 +1,13 @@
 import express from "express";
-import home from "../controller/home.js";
 
 const router = express.Router();
 
 router.get("/", (req, res) => {
-    home(req, res);
+    res.render("home");
+});
+
+router.get("/projects", (req, res) => {
+    res.render("projects");
 });
 
 export default router;

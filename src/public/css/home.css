@@ -1,0 +1,75 @@
+body {
+  background: #000000;
+  color: rgb(178, 178, 178);
+  font-family: "JetBrains Mono", monospace;
+  height: 100vh;
+  margin: 0;
+  color: #949da5;
+  /* background-image: url('../assets/skills-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: multiply;
+  backdrop-filter: blur(5px); */
+}
+body .background {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 0 25px;
+}
+body .background .top {
+  height: 30vh;
+  display: flex;
+}
+body .background .top .terminal {
+  font-style: italic;
+  width: 50%;
+}
+body .background .top .terminal .path {
+  color: #549bf5;
+  font-size: 24px;
+}
+body .background .top .terminal .terminal-input .green-arrow {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #44fb6f;
+}
+body .background .top .terminal .terminal-input .command-input-box {
+  font-style: italic;
+  border: none;
+  font-size: 24px;
+  background: #000000;
+  outline: none;
+  color: #949da5;
+}
+body .background .top .navigation {
+  width: 50%;
+  display: flex;
+  flex-flow: row-reverse;
+}
+body .background .top .navigation .navigation-item {
+  font-style: italic;
+  font-size: larger;
+  margin: 5px 45px 0 0;
+}
+body .background .top .navigation .navigation-item :hover {
+  color: rgb(0, 189, 0);
+  cursor: pointer;
+}
+body .background .bottom {
+  height: 70vh;
+}
+body .background .bottom .title {
+  font-weight: thin;
+  font-size: 10rem;
+  color: #949da5;
+  transition: color 10s ease-out;
+}
+body .background .bottom .title:hover {
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+  color: rgb(0, 135, 0);
+}/*# sourceMappingURL=home.css.map */
