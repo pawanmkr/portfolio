@@ -1,0 +1,191 @@
+$light-grey: #949da5;
+$bg-color: #000000;
+$light-green: #44fb6f;
+$green:  rgb(0, 189, 0);
+$path: #549bf5;
+$ts-border: #000;
+$dark-grey: #33383e;
+$radius: border-radius(25px);
+
+body {
+    background: $bg-color;
+    color: rgb(178, 178, 178);
+    font-family: 'JetBrains Mono', monospace;   
+    height: 100vh;
+    margin: 0;
+    color: $light-grey;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .background {
+        width: 80%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        /* height: 100vh; */
+
+        padding: 0 25px 25px 25px;
+        /* border: 2px solid white; */
+
+        .top {
+            height: 20vh;
+            display: flex;
+
+
+            .terminal {
+                font-style: italic;
+                width: 50%;
+                font-size: 20px;
+
+                .path {
+                    color: $path;
+                }
+
+                .terminal-input {
+
+                    .green-arrow {
+                        font-weight: bolder;
+                        color: $green;
+                    }
+
+                    .command-input-box {
+                        font-style: italic;
+                        border: none;
+                        font-size: 24px;
+                        background: $bg-color;
+                        outline: none;
+                        color: $light-grey;
+                    }
+                }
+            }
+
+            .navigation {
+                width: 50%;
+                display: flex;
+                flex-flow: row-reverse;
+
+                .navigation-item {
+                    font-style: italic;
+                    font-size: larger;
+                    margin: 5px 0 0 45px;
+
+                    :hover {
+                        color: rgb(0, 189, 0);
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        .bottom {
+            .contact {
+
+                display: flex;
+                flex-direction: row;
+                font-size: 20px;
+                align-items: center;
+                justify-content: center;
+
+                .separator {
+                    width: .1px;
+                    height: 250px;
+                    border: none;
+                    background: $light-grey;
+                    opacity: 0.5;
+                }
+
+                .left {
+                    padding: 25px;
+                    width: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    justify-content: center;
+
+                    p {
+                        margin: 0;
+                    }
+
+                    .contact-option {
+                        margin: 10px 0;
+
+                        :hover {
+                            color: rgb(0, 189, 0);
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .right {
+                    padding: 25px;
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+
+                    form {
+                        display: flex;
+                        flex-direction: column;
+
+                        width: 80%;
+
+                        .title {
+                            margin: 0 0 20px 0;
+                        }
+
+                        input {
+                            margin: 10px 0;
+                            font-size: 1em;
+                            border: none;
+                            border-bottom: .5px solid $light-grey;
+                            background: $bg-color;
+                            outline: none;
+                            color: $light-grey;
+                            padding: 5px;
+                            width: 80%;
+                        }
+
+                        .text-box {
+                            margin: 10px 0;
+                            font-size: 1em;
+                            border: 1px solid $light-grey;
+                            border: none;
+                            border-bottom: .5px solid $light-grey;
+                            background: $bg-color;
+                            outline: none;
+                            color: $light-grey;
+                            resize: none;
+                            height: 100px;
+                            padding: 5px;
+                            width: 80%;
+                        }
+
+                        .submit-btn {
+                            margin: 10px 0;
+                            font-size: 1em;
+                            background: $bg-color;
+                            outline: none;
+                            border: 1px solid $light-grey;
+                            padding: 10px 45px;
+                            text-align: left;
+                            width: max-content;
+                            color: $light-grey;
+
+                            &:hover {
+                                cursor: pointer;
+                                background-color: $green;
+                                border: 1px solid $bg-color;
+                                color: $bg-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
