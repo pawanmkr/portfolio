@@ -28,4 +28,21 @@ window.onload = function() {
             }
         }
     });
+
+    // Select all elements on the page
+    var elements = document.querySelectorAll("*");
+
+    for (var i = 0; i < elements.length; i++) {
+        elements[i].addEventListener("mouseover", function(event) {
+            event.target.style.backgroundColor = "yellow";
+            event.stopPropagation();
+        });
+        elements[i].addEventListener("click", function(event) {
+            console.log(event.target);
+            event.stopPropagation();
+        });
+        elements[i].addEventListener("mouseout", function(event) {
+            event.target.style.backgroundColor = "";
+        })
+    }
 };
